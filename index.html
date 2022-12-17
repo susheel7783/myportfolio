@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website susheel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/12ea7bdbce.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+   <div class="container">
+    <nav>
+       <img src="images/logo1.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    <div class="header_text">
+        <p>Full Stack Developer</p>
+        <h1>Hi,I am <span>Susheel</span><br> from Prayagraj</h1>     
+        
+    </div>
+
+   </div>
+
+    </div>
+<!-- about section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+<img src="images/myimage.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+              <p>
+                Hello, My name is Susheel Kumar from Prayagraj Uttar Pradesh currently I am pursuing M.TECH at IIT Patna and I have completed my B.TECH in (2021) in Mechanical Engineering from NIT Srinagar and Looking for a job as a software engineer where my skills in the technical field will be useful and looking forward to learning new technical skills to upskill me as a programming enthusiast. 
+              </p>
+
+              <div class="tab-title">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                <p class="tab-links"onclick="opentab('education')">Education</p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li ><span>Programming Language</span><br>C++, Java, Data Structure and Algorithm </li>
+                    <li ><span>Front-End Web Development</span><br>HTML,CSS,JavaScript</li>
+                    <li ><span>Back-End Web Development</span><br>Node.Js,MongoDB</li>    
+
+                </ul>
+              </div>
+
+              <div class="tab-contents" id="experience">
+                <ul>
+                    <li ><span>2021</span><br>Completed C++, Data Structure And Algorithm course By Coding Block</li>
+                    <li ><span>2022</span><br>Internship at Coding Ninjas,Teaching Assistant at Coding Ninjas for Java,<br> Data Structure And Algorithm </li>
+                    <li ><span>2022</span><br>Learnt Full Stack Web Development By Coding Ninjas</li> 
+                       
+                    
+                </ul>
+              </div>
+
+              <div class="tab-contents" id="education">
+                <ul>
+                    <li ><span>2021-Current</span><br>M.Tech in Metallurgical and Materials Engineering from IIT Patna</li>
+                    <li ><span>2017-2021</span><br>B.Tech in Mechanical Engineering from NIT Srinagar</li>
+                    <li ><span>2016-2017</span><br>Intermediate in PCM</li> 
+                    
+                </ul>
+              </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- services -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).[1] Web development can range from developing a simple single static page of plain text to complex web applications </p>
+                 <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Software Development</h2>
+                <p>It is a process to create computer software using one or more specific programming languages that provides functionality to address particular business or personal objectives.
+                </p>
+
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>App design combines the user interface (UI) and user experience (UX). While UI lends itself to the overall style of the app (including the colors, fonts, and general look and feel), UX focuses on the actual functionality and usability.
+
+
+                </p>
+
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- portfolio -->
+<div id="portfolio">
+
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Music Player App</h3>
+                    <p>This app will help you to enjoy the Music. You can also download the song.</p>
+                    <a href="https://susheel7783.github.io/music_player.github-io/"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>KeyNotes App</h3>
+                    <p>This app will help you to remind your work target. It will be stored on your local storage.</p>
+                    <a href="https://susheel7783.github.io/MyStickyNotes/"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Game </h3>
+                    <p>You can play a Ping-Pong Game for relaxing your mind.</p>
+                    <a href="https://susheel7783.github.io/ping-pong-game/"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>susheelkumar7783@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8765290618</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/susheel-kumar-iitp/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100023377783333"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/susheelkumar7783gmail.com7/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://twitter.com/Susheel11402755"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form  name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button> 
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Susheel,Made with <i class="fa-solid fa-heart"></i> by Susheel </p>
+    </div>
+</div>
+    <script>
+
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+
+    <script>
+        var sidemeu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby_zjG4tSSQ1hhK0Z6bYYlJjNk0ovY6vZSHVZnjsAU0xw2TvCN-GT6U0uWjem8c_u1w/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
